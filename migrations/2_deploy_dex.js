@@ -19,11 +19,12 @@ module.exports = async function (deployer, _network, accounts) {
   //   [Dai, Bat, Rep, Zrx, Dex].map((contract) => contract.deployed())
   // );
   await Promise.all([
-    dex.addToken(DAI, "0x4f96fe3b7a6cf9725f59d353f723c1bdb64ca6aa"),
+    dex.addToken(DAI, "0xff795577d9ac8bd7d90ee22b6c1703490b6512fd"),
     dex.addToken(BAT, "0x59e7daeccd2c9d4bac099ef13b52f5aa8f66dbbc"),
     dex.addToken(REP, "0xb18845c260f680d5b9d84649638813e342e4f8c9"),
     dex.addToken(ZRX, "0xb9a7e04e6c75c718904f0de0f5cc6a2728a3f50c"),
   ]);
+  
   // const amount = web3.utils.toWei("1000");
   // const seedTokenBalance = async (token, trader) => {
   //   await token.faucet(trader, amount);
