@@ -20,7 +20,7 @@ module.exports = {
       provider: () =>
         new provider(
           secrets.privateKeys,
-          "https://kovan.infura.io/v3/a7aa36fe9b7244f99529023a1a3c27ab",
+          secrets.kovanUrl,
           0,
           4
         ),
